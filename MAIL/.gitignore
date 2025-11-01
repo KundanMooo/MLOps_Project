@@ -1,0 +1,52 @@
+# --- Python ---
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.pkl
+*.log
+
+# --- Virtual environments ---
+venv/
+.env/
+.env
+.venv/
+env/
+ENV/
+.uv/
+.venv
+*.python-version
+
+# --- IDE and editor files ---
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# --- OS-specific files ---
+.DS_Store
+Thumbs.db
+
+# --- Databases ---
+*.db
+*.sqlite3
+
+# --- Dependency & build files ---
+*.egg-info/
+*.egg
+dist/
+build/
+*.lock
+
+# --- Sensitive files ---
+# Don't commit credentials, secrets, or API keys
+.env
+secrets.json
+config.json
+
+# --- Project specific ---
+uv.lock
+resumes.db
+
+# --- Jupyter Notebook checkpoints ---
+.ipynb_checkpoints/

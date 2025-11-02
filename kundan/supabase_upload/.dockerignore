@@ -1,35 +1,12 @@
-# ignore env & secrets
 .env
-.env.*      # any other env variants like .env.local, .env.dev
-
-# Python artifacts
-__pycache__/
-*.py[cod]
+__pycache__
+*.pyc
 *.pyo
 *.pyd
-
-# Virtualenvs
-.venv/
+.Python
 venv/
-
-# Packaging / build
-build/
-dist/
-*.egg-info/
-
-# Git / IDE
+*.log
 .git
 .gitignore
-.vscode/
-.idea/
-
-# Logs, DB, misc
-*.log
-*.sqlite3
-
-# Node (if present)
-node_modules/
-
-# Optional: local docker-compose override
-docker-compose.override.yml
-supabase/
+.vscode
+.idea

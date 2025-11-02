@@ -52,4 +52,4 @@ def linked_post_fun(var):
 
 if __name__ == "__main__":
 
-    resp = linked_post_fun(var="This is a test post from API")
+    resp = linked_post_fun(var="This is a test post from API, link:http://51.21.221.225:8501")

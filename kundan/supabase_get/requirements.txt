@@ -1,2 +1,0 @@
-python-dotenv==1.0.0
-supabase==2.4.0          # or the latest 2.x version on PyPI

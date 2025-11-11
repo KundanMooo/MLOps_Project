@@ -46,3 +46,5 @@ dist/
 # ==========================
 *.pid
 *.tar
+Ai_agent_jd\.env
+**/*.env

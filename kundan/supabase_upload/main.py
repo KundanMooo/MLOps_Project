@@ -129,12 +129,3 @@ async def upload_resume(
         raise
     except Exception as e:
         raise HTTPException(500, f"Error: {str(e)}")
-
-@app.get("/health")
-async def health():
-    """Health check endpoint"""
-    try:
-        supabase.table("Data_Storage").select("id").limit(1).execute()
-        return {"status": "healthy", "database": "connected"}
-    except Exception as e:
-        return {"status": "unhealthy", "error": str(e)}

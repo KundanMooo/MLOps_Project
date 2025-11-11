@@ -28,27 +28,27 @@ def init_supabase():
 
 supabase = init_supabase()
 
-# Initialize SQLite database
-def init_database():
-    """Initialize SQLite database with files table"""
-    print("📁 Initializing database...")
-    conn = sqlite3.connect('supabase_files.db')
-    cursor = conn.cursor()
+# # Initialize SQLite database
+# def init_database():
+#     """Initialize SQLite database with files table"""
+#     print("📁 Initializing database...")
+#     conn = sqlite3.connect('supabase_files.db')
+#     cursor = conn.cursor()
     
-    cursor.execute('''
-        CREATE TABLE IF NOT EXISTS files (
-            id INTEGER PRIMARY KEY AUTOINCREMENT,
-            filename TEXT NOT NULL,
-            file_path TEXT NOT NULL,
-            file_size INTEGER,
-            download_date TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
-            bucket_name TEXT NOT NULL
-        )
-    ''')
+#     cursor.execute('''
+#         CREATE TABLE IF NOT EXISTS files (
+#             id INTEGER PRIMARY KEY AUTOINCREMENT,
+#             filename TEXT NOT NULL,
+#             file_path TEXT NOT NULL,
+#             file_size INTEGER,
+#             download_date TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+#             bucket_name TEXT NOT NULL
+#         )
+#     ''')
     
-    conn.commit()
-    conn.close()
-    print("✅ Database initialized\n")
+#     conn.commit()
+#     conn.close()
+#     print("✅ Database initialized\n")
 
 # List all files in Supabase bucket recursively
 def list_all_files(bucket_name, path=""):

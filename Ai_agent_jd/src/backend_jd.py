@@ -98,7 +98,7 @@ resume_output_llm=resume_llm.with_structured_output(OutputStructure)
 def jd_genearation(state:Jd)->Jd:
     message=[
         SystemMessage(content="you are a post genrator for a particular job topic"),
-        HumanMessage(content=f"generate a job description on this topic {state['topic'] } within 100 words you also given company name ,location ")
+        HumanMessage(content=f"generate a job description on this topic {state['topic'] } within  words you also given company name ,location ")
     ]
     try:
         response=generator_llm.invoke(message).content
